@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_bill_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Bill Amount"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/rg_tip_percentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10%" />
+
+        <RadioButton
+            android:id="@+id/rb_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15%" />
+
+        <RadioButton
+            android:id="@+id/rb_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20%" />
+
+        <RadioButton
+            android:id="@+id/rb_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_custom_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Custom Tip (%)"
+        android:inputType="numberDecimal"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/et_split_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter number of people"
+        android:inputType="number" />
+
+
+    <TextView
+        android:id="@+id/tv_tip_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tip Amount: $0.00" />
+
+    <TextView
+        android:id="@+id/tv_total_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Amount: $0.00" />
+
+    <TextView
+        android:id="@+id/tv_share_per_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share per Person: $0.00" />
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/btn_view_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View History" />
+</LinearLayout>
